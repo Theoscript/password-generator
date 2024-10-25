@@ -29,8 +29,13 @@ html {
 /* general body styling */
 body {
   background: var(--bg-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 26.5625rem;
   margin: 0 auto;
+  min-height: 100vh; /* fallback */
+  min-height: 100dvh;
   padding: 1.5rem 0;
 }
 
@@ -39,27 +44,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   padding: 0 1rem;
 }
 
 .header__image {
-  width: 2rem;
-}
-
-.header__title {
-  font-size: 1.5rem; /* fallback */
-  font-size: clamp(
-    1.5rem,
-    -0.023809523809523947rem + 7.6190476190476195vw,
-    2rem
-  );
-}
-
-@media screen and (min-width: 26.5625em) {
-  .header {
-    gap: 12px;
-  }
+  width: 3rem;
 }
 
 /* generator */
@@ -76,7 +65,7 @@ body {
     0.13095238095238115rem + 6.095238095238095vw,
     1.75rem
   );
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .generator__title--green {
@@ -94,7 +83,7 @@ strong {
 .generator__controls {
   background: var(--bg-200);
   border-radius: 5px;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   padding: 1.5rem;
 }
 
