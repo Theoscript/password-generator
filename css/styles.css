@@ -1,0 +1,13 @@
+/* local font hosting */
+@font-face {
+  font-display: swap;
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/vt323-v17-latin-regular.woff2") format("woff2"),
+    url("../fonts/vt323-v17-latin-regular.ttf") format("truetype");
+}
+
+html {
+  font-family: "VT323", monospace;
+}
