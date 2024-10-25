@@ -29,6 +29,8 @@ html {
 /* general body styling */
 body {
   background: var(--bg-100);
+  max-width: 26.5625rem;
+  margin: 0 auto;
   padding: 1.5rem 0;
 }
 
@@ -58,4 +60,97 @@ body {
   .header {
     gap: 12px;
   }
+}
+
+/* generator */
+.generator {
+  color: var(--txt-200);
+  margin-top: 4rem;
+  padding: 0rem 1rem;
+}
+
+.generator__title {
+  font-size: 1.35rem; /* fallback */
+  font-size: clamp(
+    1.35rem,
+    0.13095238095238115rem + 6.095238095238095vw,
+    1.75rem
+  );
+  margin-bottom: 1rem;
+}
+
+.generator__title--green {
+  color: var(--primary-200);
+}
+
+.generator__description {
+  font-size: 1rem;
+}
+
+strong {
+  color: var(--txt-100);
+}
+
+.generator__controls {
+  background: var(--bg-200);
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+}
+
+.generator__control--range {
+  margin-bottom: 1rem;
+}
+
+.generator__range-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.generator__range-value {
+  color: var(--primary-200);
+  font-size: 1.2rem;
+}
+
+input[type="range"],
+input[type="checkbox"] {
+  accent-color: var(--primary-200);
+}
+
+#generator__range {
+  width: 100%;
+}
+
+.generator__checkbox {
+  margin-bottom: 0.75rem;
+}
+
+.generator__checkbox:last-of-type {
+  margin: 0;
+}
+
+hr {
+  background-color: var(--bg-300);
+  border: 0;
+  height: 1px;
+  margin: 1.25rem 0;
+}
+
+.generator__button {
+  background: var(--bg-300);
+  border-radius: 5px;
+  border: 0;
+  color: var(--primary-200);
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  padding: 0.75rem;
+  transition: color 0.2s;
+  width: 100%;
+}
+
+.generator__button:hover {
+  color: var(--primary-100);
+  cursor: pointer;
 }

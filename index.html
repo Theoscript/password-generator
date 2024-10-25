@@ -36,6 +36,73 @@
       />
       <h1 class="header__title">Password Generator</h1>
     </header>
+    <section class="generator">
+      <h2 class="generator__title">
+        Theoscript's
+        <span class="generator__title--green">Random Password Generator</span>
+      </h2>
+      <p class="generator__description">
+        <strong>Online security shouldn't be a headache</strong> - go ahead,
+        generate some passwords stronger than your patience in rush hour traffic
+        🔒
+      </p>
+      <div class="generator__controls">
+        <div class="generator__control generator__control--range">
+          <div class="generator__range-text">
+            <span>Password Length:</span>
+            <span class="generator__range-value">8</span>
+          </div>
+          <input
+            type="range"
+            name="generator__range"
+            id="generator__range"
+            min="8"
+            max="20"
+            step="1"
+          />
+        </div>
+        <div class="generator__control generator__control--checkboxes">
+          <div class="generator__checkbox">
+            <input
+              type="checkbox"
+              name="generator__checkbox-lowercase"
+              id="generator__checkbox-lowercase"
+              checked
+              disabled
+            />
+            <label for="generator__checkbox-lowercase">Include Lowercase</label>
+          </div>
+          <div class="generator__checkbox">
+            <input
+              type="checkbox"
+              name="generator__checkbox-uppercase"
+              id="generator__checkbox-uppercase"
+              checked
+              disabled
+            />
+            <label for="generator__checkbox-uppercase">Include Uppercase</label>
+          </div>
+          <div class="generator__checkbox">
+            <input
+              type="checkbox"
+              name="generator__checkbox-number"
+              id="generator__checkbox-number"
+            />
+            <label for="generator__checkbox-number">Include Numbers</label>
+          </div>
+          <div class="generator__checkbox">
+            <input
+              type="checkbox"
+              name="generator__checkbox-symbol"
+              id="generator__checkbox-symbol"
+            />
+            <label for="generator__checkbox-symbol">Include Symbols</label>
+          </div>
+        </div>
+        <hr />
+        <button class="generator__button">Generate Password</button>
+      </div>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>
