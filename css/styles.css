@@ -143,3 +143,34 @@ hr {
   color: var(--primary-100);
   cursor: pointer;
 }
+
+/* footer */
+.footer {
+  color: var(--txt-200);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer__tagline {
+  margin-bottom: 1rem;
+}
+
+.footer__link {
+  color: var(--primary-200);
+  transition: color 0.2s;
+}
+
+.footer__link:hover {
+  color: var(--primary-100);
+}
+
+ion-icon {
+  color: var(--txt-200);
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+
+ion-icon:hover {
+  color: var(--primary-100);
+  transform: scale(1.1);
+}
