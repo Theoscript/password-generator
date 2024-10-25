@@ -9,6 +9,7 @@
 }
 
 html {
+  color: var(--txt-100);
   font-family: "VT323", monospace;
 }
 
@@ -23,4 +24,38 @@ html {
   --primary-300: #009700;
   --txt-100: #ffffff;
   --txt-200: #e0e0e0;
+}
+
+/* general body styling */
+body {
+  background: var(--bg-100);
+  padding: 1.5rem 0;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 1rem;
+}
+
+.header__image {
+  width: 2rem;
+}
+
+.header__title {
+  font-size: 1.5rem; /* fallback */
+  font-size: clamp(
+    1.5rem,
+    -0.023809523809523947rem + 7.6190476190476195vw,
+    2rem
+  );
+}
+
+@media screen and (min-width: 26.5625em) {
+  .header {
+    gap: 12px;
+  }
 }
