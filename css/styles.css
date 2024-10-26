@@ -130,7 +130,6 @@ hr {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
   padding: 0.75rem;
 }
 
@@ -146,6 +145,11 @@ hr {
 
 .generator__copy:hover {
   cursor: pointer;
+}
+
+.generator__message {
+  font-size: 0.75rem;
+  margin: 0.5rem 0 0.75rem;
 }
 
 .generator__button {
